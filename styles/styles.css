@@ -7,12 +7,13 @@
 
 body {
     width: 100vw;
+    height: 100vh;
     background-color: #1f2937;
+    
 }
 
 .container {
     margin: 0 auto;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -22,6 +23,7 @@ header {
     justify-content: space-between;
     padding: 10px;
     margin: 0 3em;
+    
 }
 
 .logo {
@@ -29,6 +31,10 @@ header {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: 700;
+}
+
+.color-span {
+    color:#3882f6;
 }
 
 .right-links {
@@ -55,7 +61,6 @@ a {
     padding: 16px;
     justify-content: space-evenly;
     align-items: center;
-    flex: 1;
     margin: 0 3em;
 }
 
@@ -78,6 +83,11 @@ a {
     border: none;
     padding: 8px 36px;
     border-radius: 8px;
+}
+
+.header, button:hover {
+    cursor: pointer;
+    background-color: #6aa1f3;
 }
 
 img {
@@ -106,8 +116,15 @@ h2 {
 .card-section {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 36px;
     gap: 16px;
+    margin-bottom: 36px;
+}
+
+.nick {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
 }
 
 .cards {
@@ -116,21 +133,72 @@ h2 {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    width: 100px;
     height: auto
 }
 
-.card {
-    border: 2px solid rgb(0, 225, 255);
-    width: 100px;
-    height: 100px;
+
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 36px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 36px;
+}
+
+#author {
+    align-self: flex-end;
+    font-weight: bold;
+    padding-top: 36px;
+}
+
+.call-to-action {
+    background-color: white;
+    width: 100vw;
+    padding: 50px;
+
+}
+
+.container-cta {
+    background-color:#3882f6;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 8px;
+    padding: 48px;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+
+.cta-btn{
+    border: 2px solid white;
+}
+
+.cta-btn:hover {
+    cursor: pointer;
+    background-color: #6aa1f3;
 }
 
 footer {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     color: white;
     font-weight: 400;
     font-size: 16px;
+    padding: 36px;
 }
